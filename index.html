@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -23,6 +22,10 @@
 
 <h2>
 <a id="play-blockhead" class="anchor" href="#play-blockhead" aria-hidden="true"><span class="octicon octicon-link"></span></a>Play Blockhead!</h2>
+
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+</style>
 
 <canvas id="canvas"></canvas>
 <ul style="list-style-type:disc">
@@ -167,7 +170,7 @@ function render() {
             10);
     }
         
-    ctx.font-family = 'Press Start 2P';
+    ctx.font = 'Press Start 2P';
     ctx.fillStyle = '#fff';
     ctx.textBaseline = 'top';
     ctx.fillText(name + " has collected " + itemCounter + " points", 10, 10);
