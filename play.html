@@ -19,6 +19,9 @@
     <section class="main-content">
       
     <canvas id="canvas"></canvas>
+    
+    <button onclick=¨rename()¨>Rename your character</button>
+    
     <script>
        var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
@@ -60,6 +63,10 @@ dogeTiles.image.onload = function () {
     dogeTiles.loaded = true;
 };
 dogeTiles.image.src = 'http://goo.gl/f5Kds4';
+
+function rename() {
+  var name = prompt("Enter your name!");
+}
 
 var mySprite = {
     x: 200,
